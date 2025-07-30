@@ -271,7 +271,7 @@ const EnhancedLanding = () => {
                 </Typography>
               </AnimatedContainer>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 {[
                   {
                     role: 'owner' as const,
@@ -303,25 +303,25 @@ const EnhancedLanding = () => {
                   <AnimatedContainer key={option.role} delay={index * 0.2} direction="up">
                     <HoverScale scale={1.02}>
                       <Card 
-                        className="cursor-pointer border-2 hover:border-primary transition-all duration-300"
+                        className="cursor-pointer border-2 hover:border-primary transition-all duration-300 h-full min-h-[480px] flex flex-col"
                         onClick={() => handleRoleSelection(option.role)}
                         style={{
                           background: `linear-gradient(135deg, ${option.color}10 0%, #ffffff 100%)`,
                           borderColor: `${option.color}20`,
                         }}
                       >
-                        <CardHeader className="pb-4 text-center">
-                          <Box className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" 
+                        <CardHeader className="pb-4 text-center flex-shrink-0">
+                          <Box className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" 
                                style={{ backgroundColor: `${option.color}20` }}>
-                            <option.icon style={{ fontSize: 32, color: option.color }} />
+                            <option.icon style={{ fontSize: 36, color: option.color }} />
                           </Box>
-                          <CardTitle className="text-2xl">{option.title}</CardTitle>
-                          <CardDescription className="text-base">
+                          <CardTitle className="text-2xl font-semibold">{option.title}</CardTitle>
+                          <CardDescription className="text-base leading-relaxed">
                             {option.description}
                           </CardDescription>
                         </CardHeader>
-                        <CardContent>
-                          <Box component="ul" className="space-y-3">
+                        <CardContent className="flex-1 flex flex-col">
+                          <Box component="ul" className="space-y-3 flex-1">
                             {option.features.map((feature, featureIndex) => (
                               <motion.li
                                 key={featureIndex}
@@ -330,17 +330,18 @@ const EnhancedLanding = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: featureIndex * 0.1 }}
                               >
-                                <CheckCircle style={{ color: '#10b981', fontSize: 20, marginRight: 12 }} />
-                                <Typography variant="body2">{feature}</Typography>
+                                <CheckCircle style={{ color: '#10b981', fontSize: 20, marginRight: 12, flexShrink: 0 }} />
+                                <Typography variant="body2" className="leading-relaxed">{feature}</Typography>
                               </motion.li>
                             ))}
                           </Box>
                           <motion.div
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
+                            className="mt-6"
                           >
                             <Button 
-                              className="w-full mt-6" 
+                              className="w-full py-3" 
                               style={{ backgroundColor: option.color }}
                             >
                               Access {option.title.split('/')[0]} Dashboard
@@ -367,22 +368,24 @@ const EnhancedLanding = () => {
                 </Typography>
               </AnimatedContainer>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {features.map((feature, index) => (
                   <AnimatedContainer key={index} delay={index * 0.1} direction="up">
                     <HoverScale scale={1.03}>
-                      <Card className="border-0 bg-white/80 backdrop-blur-sm h-full">
-                        <CardHeader>
+                      <Card className="border-0 bg-white/80 backdrop-blur-sm h-full min-h-[280px] flex flex-col">
+                        <CardHeader className="pb-4">
                           <Box 
-                            className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
+                            className="w-14 h-14 rounded-xl flex items-center justify-center mb-4"
                             style={{ backgroundColor: `${feature.color}20` }}
                           >
-                            <feature.icon style={{ color: feature.color, fontSize: 24 }} />
+                            <feature.icon style={{ color: feature.color, fontSize: 28 }} />
                           </Box>
-                          <CardTitle className="text-xl">{feature.title}</CardTitle>
+                          <CardTitle className="text-xl font-semibold leading-tight">
+                            {feature.title}
+                          </CardTitle>
                         </CardHeader>
-                        <CardContent>
-                          <CardDescription className="text-base">
+                        <CardContent className="flex-1 pt-0">
+                          <CardDescription className="text-base leading-relaxed text-gray-600">
                             {feature.description}
                           </CardDescription>
                         </CardContent>
