@@ -3,7 +3,7 @@ const TestPage = () => {
     <div className="min-h-screen bg-blue-100 flex items-center justify-center">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-blue-900 mb-4">
-          Sky View Build Track
+          ConstructEye
         </h1>
         <p className="text-blue-700 mb-8">
           Application is working correctly!

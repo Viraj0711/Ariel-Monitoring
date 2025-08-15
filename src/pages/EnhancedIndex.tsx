@@ -19,9 +19,7 @@ import {
   Plus,
   Filter
 } from "lucide-react";
-import constructionAerial1 from "@/assets/construction-aerial-1.jpg";
-import constructionAerial2 from "@/assets/construction-aerial-2.jpg";
-import constructionAerial3 from "@/assets/construction-aerial-3.jpg";
+import buildingImage from "@/assets/Building.png";
 
 const EnhancedIndex = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -74,7 +72,7 @@ const EnhancedIndex = () => {
       status: "on-track" as const,
       lastUpdate: "2 hours ago",
       teamSize: 24,
-      imageUrl: constructionAerial1,
+      imageUrl: buildingImage,
       totalImages: 156,
       alerts: 0,
       teamMembers: [
@@ -96,7 +94,7 @@ const EnhancedIndex = () => {
       status: "delayed" as const,
       lastUpdate: "1 day ago",
       teamSize: 18,
-      imageUrl: constructionAerial2,
+      imageUrl: buildingImage,
       totalImages: 89,
       alerts: 2,
       teamMembers: [
@@ -117,7 +115,7 @@ const EnhancedIndex = () => {
       status: "ahead" as const,
       lastUpdate: "3 hours ago", 
       teamSize: 31,
-      imageUrl: constructionAerial3,
+      imageUrl: buildingImage,
       totalImages: 203,
       alerts: 0,
       teamMembers: [
@@ -137,14 +135,14 @@ const EnhancedIndex = () => {
   const comparisonData = {
     beforeImage: {
       id: "before",
-      url: constructionAerial1,
+      url: buildingImage,
       date: "March 15, 2024",
       label: "Foundation Phase",
       description: "Initial foundation work completed"
     },
     afterImage: {
       id: "after", 
-      url: constructionAerial2,
+      url: buildingImage,
       date: "July 20, 2024",
       label: "Structure Phase",
       description: "Vertical construction in progress"

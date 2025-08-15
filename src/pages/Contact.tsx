@@ -143,7 +143,7 @@ const Contact = () => {
             Ready to Transform Your Construction Projects?
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Speak with our construction technology experts to learn how Sky View Build Track 
+            Speak with our construction technology experts to learn how ConstructEye 
             can streamline your project monitoring and boost collaboration.
           </p>
         </div>
@@ -304,7 +304,7 @@ const Contact = () => {
             {/* Why Choose Us */}
             <Card>
               <CardHeader>
-                <CardTitle>Why Choose Sky View Build Track?</CardTitle>
+                <CardTitle>Why Choose ConstructEye?</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 {features.map((feature, index) => (

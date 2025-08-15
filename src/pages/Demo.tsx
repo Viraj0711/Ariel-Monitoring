@@ -16,8 +16,7 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ImageComparison } from "@/components/ImageComparison";
-import constructionAerial1 from "@/assets/construction-aerial-1.jpg";
-import constructionAerial2 from "@/assets/construction-aerial-2.jpg";
+import buildingImage from "@/assets/Building.png";
 
 const Demo = () => {
   const navigate = useNavigate();
@@ -86,7 +85,7 @@ const Demo = () => {
                 Back to Home
               </Button>
               <div className="h-6 w-px bg-border"></div>
-              <h1 className="text-xl font-semibold">Sky View Build Track Demo</h1>
+              <h1 className="text-xl font-semibold">ConstructEye Demo</h1>
             </div>
             <Button onClick={() => navigate('/auth')}>
               Start Free Trial
@@ -102,7 +101,7 @@ const Demo = () => {
             Interactive Demo
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            See Sky View Build Track in Action
+            See ConstructEye in Action
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Experience how our platform transforms construction monitoring with real-time aerial imagery,
@@ -176,14 +175,14 @@ const Demo = () => {
             <ImageComparison 
               beforeImage={{
                 id: "1",
-                url: constructionAerial1,
+                url: buildingImage,
                 date: "2024-01-15",
                 label: "Week 1",
                 description: "Project foundation start"
               }}
               afterImage={{
                 id: "2", 
-                url: constructionAerial2,
+                url: buildingImage,
                 date: "2024-03-10",
                 label: "Week 8",
                 description: "Foundation 87% complete"
@@ -262,7 +261,7 @@ const Demo = () => {
           <CardHeader className="pb-4">
             <CardTitle className="text-3xl mb-4">Ready to Get Started?</CardTitle>
             <CardDescription className="text-blue-100 text-lg">
-              Join hundreds of construction teams already using Sky View Build Track
+              Join hundreds of construction teams already using ConstructEye
             </CardDescription>
           </CardHeader>
           <CardContent>

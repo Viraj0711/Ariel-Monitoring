@@ -95,7 +95,7 @@ const Landing = () => {
               🚀 Next-Gen Construction Monitoring
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-              Sky View Build Track
+              ConstructEye
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
               Revolutionary aerial monitoring platform connecting owners, contractors, and architects 
@@ -269,7 +269,7 @@ const Landing = () => {
             Ready to Transform Your Construction Projects?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Join hundreds of successful projects using Sky View Build Track for seamless construction monitoring and collaboration.
+            Join hundreds of successful projects using ConstructEye for seamless construction monitoring and collaboration.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

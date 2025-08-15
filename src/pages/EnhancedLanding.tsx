@@ -193,7 +193,7 @@ const EnhancedLanding = () => {
                   transition={{ duration: 0.8, delay: 0.3 }}
                 >
                   <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-                    Sky View Build Track
+                    ConstructEye
                   </span>
                 </motion.h1>
                 
@@ -405,7 +405,7 @@ const EnhancedLanding = () => {
                   Ready to Transform Your Construction Projects?
                 </Typography>
                 <Typography variant="h6" className="mb-8 text-blue-100">
-                  Join hundreds of successful projects using Sky View Build Track for seamless construction monitoring and collaboration.
+                  Join hundreds of successful projects using ConstructEye for seamless construction monitoring and collaboration.
                 </Typography>
                 
                 <Box className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

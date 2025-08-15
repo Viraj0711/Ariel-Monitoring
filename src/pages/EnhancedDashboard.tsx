@@ -31,9 +31,7 @@ import {
   PageTransition,
 } from '@/components/animations/MotionComponents';
 import { BouncyButton } from '@/components/animations/SpringComponents';
-import constructionAerial1 from '@/assets/construction-aerial-1.jpg';
-import constructionAerial2 from '@/assets/construction-aerial-2.jpg';
-import constructionAerial3 from '@/assets/construction-aerial-3.jpg';
+import buildingImage from '@/assets/Building.png';
 
 const EnhancedDashboard = () => {
   const navigate = useNavigate();
@@ -87,7 +85,7 @@ const EnhancedDashboard = () => {
       status: 'on-track' as const,
       lastUpdate: '2 hours ago',
       teamSize: 24,
-      imageUrl: constructionAerial1,
+      imageUrl: buildingImage,
       totalImages: 156,
       alerts: 0,
       teamMembers: [
@@ -108,7 +106,7 @@ const EnhancedDashboard = () => {
       status: 'delayed' as const,
       lastUpdate: '1 day ago',
       teamSize: 18,
-      imageUrl: constructionAerial2,
+      imageUrl: buildingImage,
       totalImages: 89,
       alerts: 2,
       teamMembers: [
@@ -128,7 +126,7 @@ const EnhancedDashboard = () => {
       status: 'ahead' as const,
       lastUpdate: '3 hours ago',
       teamSize: 31,
-      imageUrl: constructionAerial3,
+      imageUrl: buildingImage,
       totalImages: 203,
       alerts: 0,
       teamMembers: [
@@ -147,14 +145,14 @@ const EnhancedDashboard = () => {
   const comparisonData = {
     beforeImage: {
       id: 'before',
-      url: constructionAerial1,
+      url: buildingImage,
       date: 'March 15, 2024',
       label: 'Foundation Phase',
       description: 'Initial foundation work completed',
     },
     afterImage: {
       id: 'after',
-      url: constructionAerial2,
+      url: buildingImage,
       date: 'July 20, 2024',
       label: 'Structure Phase',
       description: 'Vertical construction in progress',
