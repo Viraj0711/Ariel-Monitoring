@@ -16,7 +16,8 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ImageComparison } from "@/components/ImageComparison";
-import buildingImage from "@/assets/Building.png";
+// Use public image path so the file can live in `public/Building.png`
+const buildingImage = '/Building.png';
 
 const Demo = () => {
   const navigate = useNavigate();

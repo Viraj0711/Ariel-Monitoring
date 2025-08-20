@@ -14,7 +14,8 @@ import {
   Plus,
   Filter
 } from "lucide-react";
-import buildingImage from "@/assets/Building.png";
+// Use public image path so the file can live in `public/Building.png`
+const buildingImage = '/Building.png';
 
 const Index = () => {
   const statsData = [

@@ -31,7 +31,8 @@ import {
   PageTransition,
 } from '@/components/animations/MotionComponents';
 import { BouncyButton } from '@/components/animations/SpringComponents';
-import buildingImage from '@/assets/Building.png';
+// Use public image path so the file can live in `public/Building.png`
+const buildingImage = '/Building.png';
 
 const EnhancedDashboard = () => {
   const navigate = useNavigate();
